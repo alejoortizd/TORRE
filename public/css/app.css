@@ -76,7 +76,7 @@ input[type="submit"]:hover {
   }
 }
 
-.mensaje-url {
+.message {
   margin-top: 1rem;
   max-width: 800px;
   width: 95%;
@@ -87,16 +87,16 @@ input[type="submit"]:hover {
   border-radius: 1rem;
   text-align: center;
 }
-.mensaje-url p {
+.message p {
   margin: 0;
 }
-.mensaje-url p a {
+.message p a {
   color: black;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
 }
-.mensaje-url p a:hover {
+.message p a:hover {
   text-decoration: underline;
 }
 .error {

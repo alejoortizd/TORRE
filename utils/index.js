@@ -8,7 +8,7 @@ exports.existProfile = async (uriProfile, res) => {
         if (json.hasOwnProperty('code')) {
           return false;
         } else {
-          return res.send(json.person.name)
+          return res.send(json)
         }
       });
   } catch (error) {
@@ -17,7 +17,6 @@ exports.existProfile = async (uriProfile, res) => {
 }
 
 exports.existOpportunity = async (uriOpportunity, res) => {
-  console.log(uriOpportunity)
   try {
     const response = await fetch(uriOpportunity);
     if (response) {
@@ -30,15 +29,7 @@ exports.existOpportunity = async (uriOpportunity, res) => {
     } else {
       return false;
     }
-      // .then(res => res.json())
-      // .then(json => {
-      //   if (json.hasOwnProperty('code')) {
-      //     console.log('si la tengo')
-      //   } else {
-      //     return res.send(json)
-      //   }
-      // });
   } catch (error) {
-    console.log(error)
+    return false
   }
 }

@@ -8,7 +8,6 @@ const validatorRouter = require('./validator/routes');
 const app = express();
 
 // Settings
-app.set('port', 3000);
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, './views'));
 
