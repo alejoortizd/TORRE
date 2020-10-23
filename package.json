@@ -1,0 +1,23 @@
+{
+  "name": "torre",
+  "version": "1.0.0",
+  "description": "web app using nodejs and pug",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "JavaScript",
+    "pug"
+  ],
+  "author": "Alejandro Ortiz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
