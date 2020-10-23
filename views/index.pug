@@ -1,10 +1,8 @@
 extends master
 block content
-  form(action="/" method="POST" id="validateProfile")
-    legend Validate Profile
+  form(action="/" method="POST" id="validate")
+    legend Validate Profile or job
     .campo
       input(type="text" name="validate" id="validate" placeholder="Write name or id" required)
     .campo.profile
       input(type="submit" class="btn" value="Check Profile")
-    .campo.job
-      input(type="submit" class="btn" value="Check job")
